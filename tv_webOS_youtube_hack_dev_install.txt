@@ -1,0 +1,26 @@
+
+#App instalation using CLI
+#Must run CLI app from GUI -> bash doesn't work now, probably some missing PATH entries
+ares-install --device-list #shows devices to install to (dev mode must be enabled)
+ares-install --device webOS_TV youtube.leanback.v4_0.3.1_all.ipk
+
+#Dev mode extension
+https://developer.lge.com/secure/ResetDevModeSession.dev?sessionToken=e37df6e29ba63e116e2f3f06f954fa038b15d2fa0e9cb975751a49f8ef6e954c
+https://developer.lge.com/secure/CheckDevModeSession.dev?sessionToken=e37df6e29ba63e116e2f3f06f954fa038b15d2fa0e9cb975751a49f8ef6e954c
+
+#session_id can be found here:
+cat /var/luna/preferences/devmode_enabled
+
+#to login use:
+webOS_login
+
+#password is stored in
+webOS_password
+
+#after succesfull login you'll get following "info":
+Identity added: /home/morpheus/.ssh/webOS_TV_webos (/home/morpheus/.ssh/webOS_TV_webos)
+PTY allocation request failed on channel 0
+#these are not errors, if you 'cat' or 'ls' it'll work
+
+#more info
+https://forum.xda-developers.com/t/developer-mode-extend-session-time.4012841/

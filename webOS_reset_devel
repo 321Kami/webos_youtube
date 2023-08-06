@@ -1,0 +1,4 @@
+#!/bin/bash
+SSH_ASKPASS="/home/morpheus/webOS_pass" ssh-add /home/morpheus/.ssh/webOS_TV_webos </dev/null
+ssh -i ~/.ssh/webOS_TV_webos -p 9922 prisoner@192.168.2.14 '/usr/bin/luna-send-pub -n 1 luna://com.webos.applicationManager//launch '\''{"id":"com.palmdts.devmode","subscribe":false,"params":{"extend":true}}'\'''
+ssh-add -D
