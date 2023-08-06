@@ -1,0 +1,19 @@
+{
+  "name": "tiny-sha256",
+  "version": "1.0.2",
+  "description": "SHA-256 in 849 bytes (minified)",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "Geraint Luff",
+  "license": "Public domain",
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "grunt": "~0.4.5",
+    "mocha": "~1.21.4",
+    "grunt-mocha-test": "~0.12.0",
+    "mocha-unfunk-reporter": "~0.4.0",
+    "grunt-contrib-uglify": "~0.5.1"
+  }
+}
